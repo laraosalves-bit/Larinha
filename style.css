@@ -1,21 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8>"
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<link rel="stylesheet" href="./css/style.css">
-<script src="./js/script.js"defer></script>
+.game-board {
+    width: 80%;
+    height: 500px;
+    border: 1pxm solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
 
-<title>Mario jump</title>
-</head>
-<body>
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: 0;
+   /* animation: pipe-animation 2s infinite linear; */
+}
 
-<div class="game-board">
-
-
-
-</div>
-
-</body>
-</html>
+@keyframes pipe-animation{
+from {
+ right: 0;
+}
+to {
+ right: 100%;
+}
+}
+    
